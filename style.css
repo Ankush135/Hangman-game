@@ -21,6 +21,34 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+.life-bar {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 80px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 65px;
+    margin-top: 5px;
+    border: 5px solid white;
+
+}
+
+.life-bar-inner {
+    height: 100%;
+    background-color: #3A579A;
+    width: 100%;
+    transition: width 0.3s;
+}
+
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 .header {
     display: flex;
@@ -170,6 +198,16 @@ body {
 .key:disabled {
     background-color: grey;
     cursor: not-allowed;
+}
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #3A579A;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 @media (max-width: 600px) {
